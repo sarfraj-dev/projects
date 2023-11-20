@@ -1,3 +1,28 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @import url('https://fonts.googleapis.com/css2?family=Public+Sans&display=swap');
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  body{
+    font-family: 'Public Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  .logo{
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .header{
+    background-color: #F8F7F1;
+    padding: 2rem 4rem;
+    /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px; */
+  }
+  .headerCallIcon{
+    color: #286f6c;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 999px;
+    box-shadow: 0 4px 4px #0000000d;
+  }
+  .openNav{
+    display: none;
+  }
