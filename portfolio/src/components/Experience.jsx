@@ -51,7 +51,7 @@ function Experience() {
               <p className="">Jun 2017 - Mar 2019</p>
             </div>
             <div className="experienceFlex ml-8">
-              <h2>Engineering Graduate</h2>
+              <h2>H.S.C</h2>
               <p>
                 A visual desginer dsesign for a variety of platoforms, may
                 include internet and <br /> internet sites, games, movies, kioasks and

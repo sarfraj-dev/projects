@@ -1,8 +1,11 @@
 import { avtar, certificate } from "../assets";
 function Home() {
   return (
+    <>
+    
     <div className="home ">
-      <div className="upperElement flex justify-between	">
+    <div className="wrapperDiv">
+      <div className="upperElement flex justify-between	flex-wrap">
         <p className="primaryText">
           Hey There,
           <br />
@@ -20,7 +23,7 @@ function Home() {
       <a href="mailto:sarfrajsayyad.dev@gmail.com" className="email">
         sarfrajsayyad.dev@gmail.com
       </a>
-      <div className="lowerElement flex justify-between items-center mt-36">
+      <div className="lowerElement flex justify-between items-center mt-36 flex-wrap">
         <div className="flex gap-4 items-center">
           <div className="primaryText">20+</div>
           <div className="projectText leading-6	">
@@ -36,6 +39,9 @@ function Home() {
         </div>
       </div>
     </div>
+    </div>
+
+    </>
   );
 }
 

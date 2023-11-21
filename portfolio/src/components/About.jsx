@@ -1,7 +1,8 @@
 function About() {
   return (
-    <div>
-      <div className="flex about gap-8">
+    <>
+    <div className="wrapperDiv">
+      <div className="flex about gap-8 flex-wrap">
         <div className="aboutLeft">
           <div className="boxDiv flex items-center gap-8">
             <div
@@ -90,7 +91,8 @@ function About() {
             <span className="secondaryText">Completed my Graduation from Sushiladevi Deshmukh <br /> College in 2022</span>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 }
 

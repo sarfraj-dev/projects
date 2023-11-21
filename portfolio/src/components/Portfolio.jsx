@@ -5,7 +5,7 @@ function Portfolio() {
     <>
     <section className="wrapperDiv">
 
-<div className="flex justify-between">
+<div className="flex justify-between flex-wrap">
     <div>
     <p className="primaryText">My Latest Works</p>
     <p className="">Perfect solution for Frontend Needs</p>
@@ -13,7 +13,7 @@ function Portfolio() {
 <a href="https://github.com/sarfraj-dev/projects" className="explore">Explore More Works</a>
 </div>
 
-<div className="projectImg flex justify-around">
+<div className="projectImg flex justify-around flex-wrap gap-9">
     <a href="">
         <img src={showCase5} alt="" />
     </a>

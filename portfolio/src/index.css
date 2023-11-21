@@ -25,9 +25,10 @@
     border-radius: 999px;
     box-shadow: 0 4px 4px #0000000d;
   }
-  .openNav{
+  .openNav, .closeNav{
     display: none;
   }
+  
 .home{
     padding: 2rem 4rem; 
     background-color: #F8F7F1;
@@ -175,4 +176,46 @@ h1,h2,h3{
 .footer ul li:hover{
     color: #286f6c;
     font-weight: 700;
+}
+
+@media only screen and (max-width: 1000px) {
+    .footer{
+      flex-direction: column;
+    }
+    .experience .leading-10	{
+        flex-direction: column;
+    }
+    .experienceFlex{
+        margin-left: 0;
+    }
+    .wrapperDiv{
+        padding: 1.5rem;
+    }
+    .about, .home{
+        padding: 0;
+    }
+    .personImg{
+        position: unset;
+    }
+    .home .lowerElement{
+        margin-top: 1rem;
+    }
+    .home .email{
+        display: none;
+    }
+.openNav,.closeNav{
+    display: block;
+}
+.headerNav{
+    flex-direction: column;
+    background: white;
+    align-items: self-start;
+    padding: 2rem;
+    gap: 1rem;
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    z-index: 55;
+    /* display: none; */
+}
 }
