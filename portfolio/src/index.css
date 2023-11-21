@@ -106,3 +106,19 @@
     gap: 2rem;
     flex: 1;
 }
+.wrapperDiv{
+    padding: 2rem 4rem;
+}
+.explore{
+    text-decoration: underline;
+    color: orange;
+    cursor: pointer;
+}
+.projectImg img{
+    border-radius: 20px;
+    max-width: 25rem;
+    max-height: 18rem;
+    box-shadow: 0 21px 13px #00000021;
+    cursor: pointer;
+    transition: all ease-in-out;
+}
