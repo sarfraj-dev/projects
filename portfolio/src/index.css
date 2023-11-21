@@ -122,3 +122,40 @@
     cursor: pointer;
     transition: all ease-in-out;
 }
+.skills{
+    background-color: #F8F7F1;
+}
+.skillIconDiv{
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    cursor: pointer;
+    box-shadow: 0 21px 13px #00000021;
+    border-radius: 50%;
+    width: 5rem;
+    height: 5rem;
+    position: relative;
+}
+.iconNumber{
+    position: absolute;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    border-radius: 50%;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    text-align: center;
+    font-size: 1rem;
+    background-color: #fff;
+    opacity: .8;
+    visibility: hidden;
+    transition: all ease-in-out;
+}
+.skillIconDiv:hover  .iconNumber{
+    visibility: visible;
+}

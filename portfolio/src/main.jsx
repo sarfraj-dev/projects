@@ -5,6 +5,7 @@ import Home from './components/Home'
 import './index.css'
 import About from './components/About'
 import Portfolio from './components/Portfolio'
+import Skills from './components/Skills'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -12,5 +13,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <Home />
   <About />
   <Portfolio />
+  <Skills />
   </React.StrictMode>,
 )
