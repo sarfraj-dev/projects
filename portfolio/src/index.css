@@ -58,13 +58,13 @@
     background-image: url(./assets/splash.png);
     background-repeat: no-repeat;
     /* background-size: 12rem; */
-    left: 41%;
+    left: 38%;
     background-size: cover;
 }
 .personImg img{
     /* width: 80%;
     margin-bottom: -5px; */
-    height: 250px;
+    height: 350px;
 }
 .email{
     position: absolute;
