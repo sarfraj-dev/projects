@@ -216,6 +216,12 @@ h1,h2,h3{
     top: 5rem;
     right: 0;
     z-index: 55;
-    /* display: none; */
+   }
+.headerNavDiv{
+    right: 0;
+    display: block;
+}
+.headerNavClose{
+    display: none;
 }
 }
