@@ -5,7 +5,7 @@ function Portfolio() {
     <>
     <section className="wrapperDiv">
 
-<div className="flex justify-between flex-wrap">
+<div className="flex justify-between flex-wrap items-end mb-7">
     <div>
     <p className="primaryText">My Latest Works</p>
     <p className="">Perfect solution for Frontend Needs</p>

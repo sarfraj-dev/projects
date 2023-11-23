@@ -2,7 +2,7 @@ function About() {
   return (
     <>
     <div className="wrapperDiv">
-      <div className="flex about gap-8 flex-wrap">
+      <div className="flex about gap-8 flex-wrap responsiveCenter">
         <div className="aboutLeft">
           <div className="boxDiv flex items-center gap-8">
             <div

@@ -53,22 +53,23 @@
 
 .personImg{
     position: absolute;
-    bottom: 0;
+    bottom: 0.5rem;
     margin: auto;
     background-image: url(./assets/splash.png);
     background-repeat: no-repeat;
-    background-size: 23rem;
-    left: 33%;
-   
+    /* background-size: 12rem; */
+    left: 41%;
+    background-size: cover;
 }
 .personImg img{
-    width: 80%;
-    margin-bottom: -5px;
+    /* width: 80%;
+    margin-bottom: -5px; */
+    height: 250px;
 }
 .email{
     position: absolute;
     top: 50%;
-    left: 0;
+    /* left: 50; */
     color: orange;
 }
 .projectText{
@@ -128,7 +129,11 @@
     max-height: 18rem;
     box-shadow: 0 21px 13px #00000021;
     cursor: pointer;
-    transition: all ease-in-out;
+    /* transition: all ease-in-out; */
+    transition: all .2s ease-in-out;
+}
+.projectImg img:hover{
+    transform: scale(1.05);
 }
 .skills, .experience{
     background-color: #F8F7F1;
@@ -184,14 +189,48 @@ h1,h2,h3{
     color: #286f6c;
     font-weight: 700;
 }
-
+.line{
+    position: absolute;
+    height: 90%;
+    width: 2px;
+    background-image: linear-gradient(black 33%,rgba(255,255,255,0) 0%);
+    background-position: right;
+    background-size: 2px 30px;
+    background-repeat: repeat-y;
+    left: 48%;
+    z-index: 1;
+    border-radius: 5px;
+}
+.circleLineDiv{
+    flex: 1;
+    padding-top: 0.5rem;
+    z-index: 2;
+}
+.circleLineDiv .circle{
+    border-radius: 50%;
+    /* background: rgb(40, 111, 108); */
+    width: 1.2rem;
+    height: 1.2rem;
+}
+.progressBar{
+    position: absolute;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    left: 45%;
+}
 @media only screen and (max-width: 1000px) {
+    .responsivePadding{
+        margin-top: 6rem;
+    }
+    .progressBar{
+        height: 260%;
+    }
     .footer{
       flex-direction: column;
     }
-    .experience .leading-10	{
-        flex-direction: column;
-    }
+
     .experienceFlex{
         margin-left: 0;
     }
@@ -230,5 +269,9 @@ h1,h2,h3{
 }
 .headerNavClose{
     display: none;
+}
+.responsiveCenter{
+    justify-content: center;
+    text-align: center;
 }
 }

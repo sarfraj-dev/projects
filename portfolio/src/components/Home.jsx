@@ -5,7 +5,7 @@ function Home() {
     
     <div className="home ">
     <div className="wrapperDiv">
-      <div className="upperElement flex justify-between	flex-wrap">
+      <div className="upperElement flex justify-between	flex-wrap responsiveCenter">
         <p className="primaryText">
           Hey There,
           <br />
@@ -23,7 +23,7 @@ function Home() {
       <a href="mailto:sarfrajsayyad.dev@gmail.com" className="email">
         sarfrajsayyad.dev@gmail.com
       </a>
-      <div className="lowerElement flex justify-between items-center mt-36 flex-wrap">
+      <div className="lowerElement flex justify-between items-center mt-36 flex-wrap responsiveCenter">
         <div className="flex gap-4 items-center">
           <div className="primaryText">20+</div>
           <div className="projectText leading-6	">
