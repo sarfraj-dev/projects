@@ -1,7 +1,8 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [stickyHeader, setStickyHeader]= useState(false)
 
   const open = () => {
     setIsNavOpen(true);
@@ -11,9 +12,27 @@ function Header() {
     setIsNavOpen(false);
   };
 
+  const handleScroll = () => {
+    if (window.scrollY < 500) {
+      setStickyHeader(true);
+    } else {
+      setStickyHeader(false);
+    }
+  };
+
+  useEffect(() => {
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <>
-      <div className="header flex justify-between items-center">
+    <div className={`header flex justify-between items-center ${stickyHeader ? "header setStickyHeaderStateActive" : "stickyHeader"}`} >
+
         <div className="logo">Sarfraj Sayyad</div>
         <div className={isNavOpen ? "headerNavDiv openNav" : "headerNavClose"}>
           <ul className="uppercase flex gap-x-6 items-center headerNav">
