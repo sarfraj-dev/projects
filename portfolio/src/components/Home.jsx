@@ -1,5 +1,30 @@
 import { avtar, certificate } from "../assets";
+import { useEffect} from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 function Home() {
+  useEffect(() => {
+    // Register ScrollTrigger with GSAP
+    gsap.registerPlugin(ScrollTrigger);
+
+    const boxes = gsap.utils.toArray('.HomeSideAnimation');
+    boxes.forEach((HomeSideAnimation) => {
+      gsap.to(HomeSideAnimation, {
+        x: 80,
+        scrollTrigger: {
+          trigger: HomeSideAnimation,
+          start: 'left 70%',
+          toggleActions: 'play none none reset',
+        },
+      });
+    });
+  
+    return () => {
+      boxes.forEach((HomeSideAnimation) => {
+        gsap.to(HomeSideAnimation, { x: 0 }); // Reset the animation on unmount
+      });
+    };
+  }, []);
   return (
     <>
     
@@ -25,7 +50,7 @@ function Home() {
       </a>
       <div className="lowerElement flex justify-between items-center mt-36 flex-wrap responsiveCenter">
         <div className="flex gap-4 items-center">
-          <div className="primaryText">20+</div>
+          <div className="primaryText HomeSideAnimation">20+</div>
           <div className="projectText leading-6	">
             Frontend <br /> Projcts build
           </div>

@@ -1,8 +1,37 @@
+
 function Skills() {
+
+  /*
+  const [animation, setanimation]= useState(false)
+
+  const animationScroll = () => {
+    console.log(window.scrollY); 
+    const scrollY = window.scrollY;
+
+    const startRange = 1150;
+    const endRange = 1200;
+    if (scrollY >= startRange && scrollY <= endRange) {
+      setanimation(true);
+    } else {
+      setanimation(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", animationScroll);
+
+    return () => {
+      window.removeEventListener("scroll", animationScroll);
+    };
+  }, []);
+  */
   return (
+    
     <>
       <section className="wrapperDiv skills">
-        <div className="text-center my-2">
+        <div className="text-center my-2 sillsHeader">
+
+
           <p className="primaryText">Skills</p>
           <p className="">Technology Stack</p>
         </div>

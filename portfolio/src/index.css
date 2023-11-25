@@ -220,6 +220,21 @@ h1,h2,h3{
     gap: 1.4rem;
     left: 45%;
 }
+.transformAnimation{
+    /* transform: translateY(80px);
+    opacity: 0;
+    transition: 2s all ease; */
+
+    opacity: 0;
+    transform: scale(0) translateY(0px);
+}
+.transformAnimationActive{
+    transform: translateY(80);
+    opacity: 1;
+    transition: 4s all ease;
+
+
+}
 @media only screen and (max-width: 1000px) {
     .responsivePadding{
         margin-top: 6rem;
